@@ -16,7 +16,7 @@ for blah in listylist:
     print fullurl
 #
 # # Read in a page
-html = scraperwiki.scrape("http://foo.com")
+html = scraperwiki.scrape("http://uk.soccerway.com/teams/netherlands/fortuna-sittard/1551/")
 #
 # # Find something on the page using css selectors
 root = lxml.html.fromstring(html)
