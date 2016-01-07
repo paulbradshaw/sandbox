@@ -7,8 +7,8 @@
 print 'hello'
 urltoscrape = 'http://site.com'
 print urltoscrape
-urltoscrape = urltoscrape+'/p1'
-print urltoscrape
+urltoscrape2 = urltoscrape+'/p1'
+print urltoscrape2
 listylist = ['p1','p2','p3']
 for blah in listylist:
     print blah
