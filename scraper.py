@@ -26,7 +26,7 @@ print tds
 indexno = 0
 record = {}
 for td in tds:
-    indexno++
+    indexno = indexno+1
     print lxml.html.tostring(td)
     print td.text
     fullentry = lxml.html.tostring(td)
