@@ -5,7 +5,7 @@
 # import lxml.html
 
 print 'hello'
-urltoscrape = 'http://site.com'
+urltoscrape = 'http://site.com/'
 print urltoscrape
 urltoscrape2 = urltoscrape+'/p1'
 print urltoscrape2
