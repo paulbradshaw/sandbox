@@ -32,7 +32,7 @@ for td in tds:
     fullentry = lxml.html.tostring(td)
     record['td'] = fullentry
     record['index'] = indexno
-    scraperwiki.sqlite.save(unique_keys=['indexno'], data=record)
+    scraperwiki.sqlite.save(unique_keys=['index'], data=record)
 #
 # # Write out to the sqlite database using scraperwiki library
 
