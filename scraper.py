@@ -3,6 +3,7 @@
 
 import scraperwiki
 import lxml.html
+import mechanize
 
 print 'hello'
 urltoscrape = 'http://site.com/'
@@ -21,14 +22,14 @@ html = scraperwiki.scrape("http://uk.soccerway.com/teams/netherlands/fortuna-sit
 # # Find something on the page using css selectors
 root = lxml.html.fromstring(html)
 tds = root.cssselect("table.table.squad.sortable td div")
-print tds
+#print tds
 
 indexno = 0
 record = {}
 for td in tds:
     indexno = indexno+1
-    print lxml.html.tostring(td)
-    print td.text
+    #print lxml.html.tostring(td)
+    #print td.text
     fullentry = lxml.html.tostring(td)
     record['td'] = fullentry
     record['index'] = indexno
